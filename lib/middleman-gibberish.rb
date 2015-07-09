@@ -153,10 +153,18 @@ module ::Middleman
         <<-__
           <html>
             <head>
+              <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Montserrat:400,700|Raleway:400,100,200,300' rel='stylesheet' type='text/css'>
               <style>
+                body{
+                  background-color: black;
+                  font-family: 'Source Sans Pro', sans-serif;
+                }
+                h1,h2,h3,h4{
+                  font-family: 'Montserrat', sans-serif;
+                }
                 .gibberish {
                   margin: auto;
-                  color: #999;
+                  color: #fff;
                   text-align: center;
                 }
 
@@ -173,7 +181,15 @@ module ::Middleman
 
                 .gibberish-message {
                   margin: auto;
-                  color: #633;
+                  color: #fff;
+                }
+                #gibberish-password{
+                  padding: 10px;
+                  border-radius: 5px;
+                  width: 100%;
+                  max-width: 320px;
+                  text-align: center;
+                  font-size: 15px;
                 }
               </style>
             </head>
@@ -183,12 +199,13 @@ module ::Middleman
               <br>
               <br>
               <div class='gibberish'>
-
+                <img src="http://pullzone.vydiainc.netdna-cdn.com/wp-content/uploads/2014/05/vydialogoWHITE.png">
+                <h2>Welcome to our brand guidelines page.</h2>
                 <div class='gibberish-instructions'>
-                  enter password and press &lt;enter&gt;
+                  Type the password and press "enter".
                 </div>
 
-                <input id='gibberish-password' name='gibberish-password' type='password' class='gibberish-password'/>
+                <input id='gibberish-password' placeholder="3nTEr y0uR p@$sW0rD" name='gibberish-password' type='password' class='gibberish-password'/>
 
                 <div class='gibberish-message'>
                 </div>
